@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainPageController">
+    <children>
+        <AnchorPane fx:id="anchor_fitted" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane fx:id="anchor_sol_menu" prefHeight="768.0" prefWidth="230.0">
+               <children>
+                  <VBox layoutY="230.0" prefHeight="360.0" prefWidth="230.0">
+                     <children>
+                        <Button fx:id="btn_menu_mailgonder" mnemonicParsing="false" onAction="#btn_menu_mailgonder_click" prefHeight="60.0" prefWidth="260.0" text="Mail Gönder">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Button fx:id="btn_menu_yonet" mnemonicParsing="false" onAction="#btn_menu_yonet_click" prefHeight="60.0" prefWidth="260.0" text="Kişileri Yönet">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Button fx:id="btn_menu_log" mnemonicParsing="false" onAction="#btn_menu_log_click" prefHeight="60.0" prefWidth="230.0" text="Gönderilen Mail (Log)">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="img_menu" fitHeight="150.0" fitWidth="150.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/iconw.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_oturum" layoutY="648.0" mnemonicParsing="false" onAction="#btn_oturum_click" prefHeight="60.0" prefWidth="230.0" text="Oturumu Kapat">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_menu_cikis" layoutY="708.0" mnemonicParsing="false" onAction="#btn_menu_cikis_click" prefHeight="60.0" prefWidth="230.0" text="Çıkış">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Label fx:id="lbl_usermail" layoutY="588.0" prefHeight="60.0" prefWidth="230.0" text="mail" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_username" layoutY="528.0" prefHeight="60.0" prefWidth="230.0" text="username" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+                <AnchorPane fx:id="anchor_govde" layoutX="230.0" prefHeight="768.0" prefWidth="794.0">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="247.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/iste_arma.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="248.0" layoutY="414.0" text="Nesne Tabanlı Programlama" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="301.0" layoutY="449.0" text="Otomasyon Ödevi" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="340.0" layoutY="636.0" text="Halit Mustafa Kan" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

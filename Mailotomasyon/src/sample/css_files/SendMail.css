@@ -1,0 +1,28 @@
+.button {
+    -fx-background-color: #ff7f50;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+#mail_gonder:hover {
+    -fx-background-color: #2F4E68;
+}
+#mail_gonder:pressed {
+    -fx-background-color: #6a5acd;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(13, 140, 62, 0.07);
+    -fx-text-background-color: #6a5acd;
+}
+.text-area {
+    -fx-border: none;
+    -fx-prompt-text-fill: lightgray;
+    -fx-wrap-text: true;
+}
+#txt_message {
+    -fx-control-inner-background: rgba(0,0,0,0.3);
+}
+.viewport {
+    -fx-background-color: rgba(0,0,0,0.3);
+}

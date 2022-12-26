@@ -1,0 +1,19 @@
+.label {
+    -fx-text-fill: white;
+}
+.root {
+    -fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd);
+}
+
+.text-field {
+    -fx-border: none;
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: white;
+}
+.button {
+    -fx-background-color: #C8A3B5;
+    -fx-text-fill: white;
+}
+#btn_kayit:hover, #btn_giris:hover {
+    -fx-background-color: #2F4E68;
+}

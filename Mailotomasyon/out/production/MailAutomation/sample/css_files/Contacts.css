@@ -1,0 +1,28 @@
+.button {
+    -fx-background-color: #ff7f50;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+#btn_contacts_yeni:hover,#btn_contacts_guncelle:hover, #btn_contacts_sil:hover, #btn_contacts_yenile:hover {
+    -fx-background-color: #2F4E68;
+}
+#btn_contacts_yeni:pressed,#btn_contacts_guncelle:pressed, #btn_contacts_sil:pressed, #btn_contacts_yenile:pressed {
+    -fx-background-color: #6a5acd;
+}
+#split_pane {
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-border: none;
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: lightgray;
+}
+
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(13, 140, 62, 0.07);
+    -fx-text-background-color: #6a5acd;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchor_parent" prefHeight="768.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ContactsController">
+   <children>
+      <SplitPane fx:id="split_pane" dividerPositions="0.3611111111111111" layoutX="594.0" prefHeight="768.0" prefWidth="794.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="contacts_menu" minHeight="0.0" minWidth="0.0" prefHeight="766.0" prefWidth="230.0">
+               <children>
+                  <VBox layoutX="25.0" layoutY="230.0" prefHeight="240.0" prefWidth="233.0">
+                     <children>
+                        <Button fx:id="btn_contacts_yeni" mnemonicParsing="false" onAction="#btn_contacts_yeni_click" prefHeight="60.0" prefWidth="233.0" text="Kaydet" />
+                        <Button fx:id="btn_contacts_guncelle" mnemonicParsing="false" onAction="#btn_contacts_guncelle_click" prefHeight="60.0" prefWidth="233.0" text="Güncelle" />
+                        <Button fx:id="btn_contacts_sil" mnemonicParsing="false" onAction="#btn_contacts_sil_click" prefHeight="60.0" prefWidth="233.0" text="Sil" />
+                        <Button fx:id="btn_contacts_yenile" mnemonicParsing="false" onAction="#btn_contacts_yenile_click" prefHeight="60.0" prefWidth="233.0" text="Yenile" />
+                     </children>
+                  </VBox>
+                  <Label fx:id="lbl_controller" layoutX="103.0" layoutY="730.0" text="Label" visible="false" />
+                  <VBox layoutX="25.0" layoutY="50.0" prefHeight="150.0" prefWidth="233.0">
+                     <children>
+                        <TextField fx:id="txt_menu_ad" prefHeight="45.0" prefWidth="233.0" promptText="Ad" />
+                        <Separator prefHeight="5.0" prefWidth="233.0" />
+                        <TextField fx:id="txt_menu_soyad" prefHeight="45.0" prefWidth="233.0" promptText="Soyad" />
+                        <Separator prefHeight="5.0" prefWidth="233.0" />
+                        <TextField fx:id="txt_menu_mail" prefHeight="45.0" prefWidth="233.0" promptText="Mail Adresi" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="766.0" prefWidth="475.0">
+               <children>
+                  <TableView fx:id="kayitlar_tablo" onMouseClicked="#kayitlar_tablo_click" prefHeight="766.0" prefWidth="553.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tablo_id" prefWidth="43.0" text="ID" />
+                      <TableColumn fx:id="tablo_ad" prefWidth="120.0" text="Ad" />
+                        <TableColumn fx:id="tablo_soyad" prefWidth="127.0" text="Soyad" />
+                        <TableColumn fx:id="tablo_mail" prefWidth="212.0" text="Mail Adresi" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+.button {
+    -fx-background-color: #ff7f50;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+#btn_menu_cikis:hover,#btn_menu_log:hover ,#btn_oturum:hover, #btn_menu_mailgonder:hover, #btn_menu_yonet:hover {
+    -fx-background-color: #2F4E68;
+}
+#btn_menu_cikis:pressed,#btn_menu_log:pressed ,#btn_oturum:pressed, #btn_menu_mailgonder:pressed, #btn_menu_yonet:pressed {
+    -fx-background-color: #6a5acd;
+}
+#btn_menu_cikis:focused,#btn_menu_log:focused, #btn_oturum:focused, #btn_menu_mailgonder:focused, #btn_menu_yonet:focused {
+    -fx-background-color: #2F4E68;
+}
+#anchor_sol_menu {
+    -fx-background-color: rgba(0,0,0,0.3);
+}
+
+.label {
+    -fx-alignment: center;
+}

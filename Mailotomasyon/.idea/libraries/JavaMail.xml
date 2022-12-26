@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="JavaMail">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/JavaFX/javamail/activation-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/JavaFX/javamail/javax.mail-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
